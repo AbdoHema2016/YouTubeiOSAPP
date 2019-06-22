@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC17F99522BE7E950038AFF4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC17F99422BE7E950038AFF4 /* Extensions.swift */; };
 		BC17F99822BE7F630038AFF4 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC17F99722BE7F630038AFF4 /* VideoCell.swift */; };
+		BC17F99B22BE8A940038AFF4 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC17F99A22BE8A940038AFF4 /* MenuBar.swift */; };
 		BC1EC04122BDAACD0004EF1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1EC04022BDAACD0004EF1C /* AppDelegate.swift */; };
 		BC1EC04322BDAACD0004EF1C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1EC04222BDAACD0004EF1C /* HomeController.swift */; };
 		BC1EC04622BDAACD0004EF1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1EC04422BDAACD0004EF1C /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		BC17F99422BE7E950038AFF4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BC17F99722BE7F630038AFF4 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		BC17F99A22BE8A940038AFF4 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		BC1EC03D22BDAACD0004EF1C /* YouTubeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1EC04022BDAACD0004EF1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC1EC04222BDAACD0004EF1C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				BC17F99722BE7F630038AFF4 /* VideoCell.swift */,
+				BC17F99A22BE8A940038AFF4 /* MenuBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				BC17F99822BE7F630038AFF4 /* VideoCell.swift in Sources */,
 				BC17F99522BE7E950038AFF4 /* Extensions.swift in Sources */,
 				BC1EC04122BDAACD0004EF1C /* AppDelegate.swift in Sources */,
+				BC17F99B22BE8A940038AFF4 /* MenuBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
