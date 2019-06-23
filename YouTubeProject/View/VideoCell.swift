@@ -73,8 +73,8 @@ class VideoCell: BaseCell {
             userProfileImageView.loadImageUsingUrlString(urlString: profileImageUrl)
         }
     }
-    let thumbnailImageView: UIImageView = {
-        let imageView = UIImageView()
+    let thumbnailImageView: CustomImageView = {
+        let imageView = CustomImageView()
         
         imageView.image = UIImage(named: "quizicon.jpg")
         imageView.contentMode = .scaleAspectFill
@@ -82,8 +82,8 @@ class VideoCell: BaseCell {
         
         return imageView
     }()
-    let userProfileImageView: UIImageView = {
-        let imageView = UIImageView()
+    let userProfileImageView: CustomImageView = {
+        let imageView = CustomImageView()
         
         imageView.image = UIImage(named: "Icon")
         imageView.layer.cornerRadius = 22
