@@ -27,11 +27,14 @@ class VideoCell: BaseCell {
         didSet {
             titleLabel.text = video?.title
             
-            thumbnailImageView.image = UIImage(named: (video?.thumbnailImageName)!)
+            setupThumbnailImage()
+            setupProfileImage()
             
+            //thumbnailImageView.image = UIImage(named: (video?.thumbnailImageName)!)
+            /*
             if let profileImageName = video?.channel?.profileImageName {
                 userProfileImageView.image = UIImage(named: profileImageName)
-            }
+            }*/
             
             if let channelName = video?.channel?.name, let numberOfViews = video?.numberOfViews {
                 
@@ -58,13 +61,17 @@ class VideoCell: BaseCell {
             
         }
     }
-    override init(frame: CGRect) {
-        super.init(frame:frame)
-        
-        
+   
+    
+    func setupThumbnailImage() {
+        if let thumbnailImageUrl = video?.thumbnailImageName {
+            thumbnailImageView.loadImageUsingUrlString(urlString: thumbnailImageUrl)
+        }
     }
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    func setupProfileImage() {
+        if let profileImageUrl = video?.channel?.profileImageName {
+            userProfileImageView.loadImageUsingUrlString(urlString: profileImageUrl)
+        }
     }
     let thumbnailImageView: UIImageView = {
         let imageView = UIImageView()
@@ -81,6 +88,7 @@ class VideoCell: BaseCell {
         imageView.image = UIImage(named: "Icon")
         imageView.layer.cornerRadius = 22
         imageView.layer.masksToBounds = true
+        imageView.contentMode = .scaleAspectFill
         
         return imageView
     }()
